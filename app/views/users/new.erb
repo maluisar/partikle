@@ -1,16 +1,33 @@
-
-<form class="sign-up-form" action='/sessions' method="POST">
-  <label>First name</label>
-  <input type="text" name="user[first_name]">
-  <label>Last name</label>
-  <input type="text" name="user[last_name]">
-  <label>Location preference</label>
-  <input type="text" name="user[location_preference]">
-  <label>e-mail</label>
-  <input type="email" name="user[email]">
-  <label>Password</label>
-  <input type="password" name="password">
-  <label>Password confirmation</label>
-  <input type="password" name="password_auth">
-  <input type="submit" name="Login">
-</form>
+<div>
+  <form class="sign-up-form" action='/sessions' method="POST">
+    <div class='form-container'>
+      <div id="col1-signup">
+        <div class='user-input'>
+          <label>First Name</label>
+          <input class='field' type="text" name="user[first_name]" placeholder="First name">
+        </div>
+        <div class='user-input'>
+          <label>Last Name</label>
+          <input class='field' type="text" name="user[last_name]" placeholder="First name">
+        </div>
+        <div class='user-input'>
+          <label>Username</label>
+          <input class='field' type="email" name="user[email]" placeholder="Username or email">
+        </div>
+      </div>
+      <div id='col2-signup'>
+        <div class='user-input'>
+          <label>Password</label>
+          <input class='field' type="password" name="password" placeholder="Password">
+        </div>
+        <div class='user-input'>
+          <label>Password confirmation</label>
+          <input class='field' type="password" name="password_auth" placeholder="Confirm password">
+        <div/>
+        <div class="submit-sign-up-form">
+          <input type="submit" name="Register" value="Register">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,5 +1,7 @@
 $(document).ready(function() {
   showMenu();
+  showLogin();
+  showLink();
 });
 
 var showMenu = function(){
@@ -8,19 +10,26 @@ var showMenu = function(){
   });
 };
 
+var showLogin = function(){
+  $('.menu-list').on('click', '#log-in', function(event){
+    event.preventDefault();
 
+    var listItem = $(this).parent();
+    var url = $(this).attr('href');
 
-//   $('.menu-container').toggle(
-//     function() {
-//       $('.location-form').css("display", "inline-block");
-//       $('.index-menu').css("display", "inline-block");
-//     },
-//     function() {
-//       $('.location-form').css("display", "block");
-//       $('.index-menu').css("display", "none");
-//     });
-// };
+    $.ajax({
+      url: url
+    }).done( function(response){
+      (listItem).html(response);
+    });
+  });
+};
 
+var showLink = function(){
+  $('.menu-list').on('click', '.log-in-title', function () {
+    $(this).closest('.menu-list-item').html("<a id='log-in' href='/sessions/new'>Login</a></li>")
+  });
+};
 
 
 

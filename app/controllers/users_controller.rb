@@ -1,5 +1,5 @@
 get '/users/new' do
-  erb :'user/new'
+  erb :'users/new'
 end
 
 post '/users' do
@@ -9,12 +9,12 @@ post '/users' do
     redirect "/users/#{@user.id}"
   else
     @errors = @user.errors.full_messages
-    erb :'user/new'
+    erb :'users/new'
   end
 end
 
 get '/users/:id' do
-  erb :'user/show'
+  erb :'users/show'
 end
 
 get '/users/:id/edit' do

@@ -19,7 +19,7 @@
 </head>
 <body>
   <header>
-    <h1 class="logo">Partikle</h1>
+    <h1 class="logo"><a class='logo-link' href='/'>Partikle</a></h1>
 
     <div class="menu-container">
       <div class="bar1"></div>
@@ -30,9 +30,7 @@
   </header>
 
   <main id="main">
-    <div>
-        <%= yield %>
-    </div>
+    <%= yield %>
     <div class="index-menu" id="index-menu">
       <ul class= "menu-list">
       <% if logged_in? %>
@@ -40,8 +38,8 @@
         <li class="menu-list-item">Settings</li>
         <li class="menu-list-item"></li>
       <%else%>
-        <li class="menu-list-item">Login</li>
-        <li class="menu-list-item">Sign up</li>
+        <li class="menu-list-item" ><a id="log-in" href='/sessions/new'>Login</a></li>
+        <li class="menu-list-item" ><a id="sign-up" href='/users/new'>Sign up</a></li>
         <li class="menu-list-item">About us</li>
       <% end %>
       </ul>
