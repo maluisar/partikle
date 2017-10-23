@@ -15,6 +15,10 @@ header {
     margin:0 15px 0 15px;
 }
 
+#main {
+    display: flex;
+}
+
 .menu-container {
     display: inline-block;
     cursor: pointer;
@@ -29,6 +33,24 @@ header {
     margin: 6px 0;
     transition: 0.4s;
 }
+.index-menu{
+    display: none;
+}
+
+.index-menu-on {
+    display: inline-block;
+    float: right;
+    padding: 20px 20px 0 0;
+    min-height: 200px;
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: #526377;
+}
+
+.menu-list-item {
+    padding: 5px;
+    max-height: 100%
+}
 
 .location-form {
     max-width: 50em;
@@ -37,6 +59,7 @@ header {
     box-sizing: border-box;
     overflow: hidden;
 }
+
 .location-form .textarea {
     max-width: 100%;
     padding: 1em 1.5em;

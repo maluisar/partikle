@@ -28,6 +28,24 @@
     </div>
 
   </header>
-  <%= yield %>
+
+  <main id="main">
+    <div>
+        <%= yield %>
+    </div>
+    <div class="index-menu" id="index-menu">
+      <ul class= "menu-list">
+      <% if logged_in? %>
+        <li class="menu-list-item">Log-out</li>
+        <li class="menu-list-item">Settings</li>
+        <li class="menu-list-item"></li>
+      <%else%>
+        <li class="menu-list-item">Login</li>
+        <li class="menu-list-item">Sign up</li>
+        <li class="menu-list-item">About us</li>
+      <% end %>
+      </ul>
+  </div>
+  </main>
 </body>
 </html>
