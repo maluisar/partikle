@@ -1,0 +1,316 @@
+
+/*header*/
+.logo {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    padding: 0px 20px 0 30px;
+    max-width: 40%;
+    display: inline-block;
+}
+
+.logo-link {text-decoration: none; important!}
+.logo-link:visited {color:#526377;}
+
+header {
+    color: #526377;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #526377;
+    margin:0 15px 0 15px;
+}
+
+#main {
+    display: flex;
+}
+
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding: 20px 25px 20px 20px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.index-menu {
+    display: none;
+}
+
+.index-menu-on {
+    color: white;
+    font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.1em;
+    margin-right: 18px;
+    display: block;
+    padding: 0 20px 0 0;
+    min-height: 180px;
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: #526377;
+    width: 280px;
+    background: #526377; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #526377, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #526377, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #526377, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to-right, #526377, #ffffff); /* Standard syntax */
+}
+
+.index-menu a {text-decoration: none;}
+.index-menu a:visited {color:white;}
+.menu-list-item :hover {color:#333 !important;}
+
+.menu-list{
+    padding-left: 20px;
+}
+.menu-list-item {
+    display: block;
+    padding: 10px 0 10px 0 ;
+}
+
+.location-form {
+    /*max-width: 50em;*/
+    display: box;
+    width: 60%;
+    margin: 50px auto;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.location-form .textarea {
+    padding: 1em 1.5em;
+    outline: none;
+    line-height: normal;
+    border: 1px solid transparent;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background: transparent;
+    outline: none;
+    color: black;
+}
+
+
+.button {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: .8em;
+  line-height: normal;
+  background-color: #526377;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.14286em;
+  float: right;
+  padding: 10px 10px 5px 10px;
+
+}
+
+.log-in-form {
+  margin: auto;
+  display: block;
+}
+
+.log-in-form ::placeholder {
+  color: #b3b6bc;
+  font-size: .8em;
+}
+
+.float input { border: none }
+
+.submit {
+  font-size: 0.8em;
+  color: #333;
+}
+
+.log-in-title {
+  color:#333;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.log-out-btn{
+  background:none;
+  border:none;
+  font-size:1em;
+  color:white;
+}
+
+.sign-up-form-container {
+
+    width: 50%;
+    margin: 50px auto;
+    padding: 1em 2em;
+    overflow: hidden;
+}
+
+.col-contianer{
+    display: box;
+    width: 100%;
+
+}
+
+#col1-signup {
+    margin-top: 20px;
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: #526377;
+    display: inline-block;
+    width: 45%;
+}
+
+#col2-signup {
+    margin-top: 20px;
+    width: 45%;
+    display: inline-block;
+    float: right;
+}
+
+.user-input  {
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.sign-up-form ::placeholder{
+    font-size: .8em;
+    color: #9fa7b7;
+}
+
+.sign-up-form .field {
+    padding: 1em 1.5em;
+    outline: none;
+    line-height: normal;
+    border: 1px solid transparent;
+    line-height: normal;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    background: transparent;
+    outline: none;
+    color: black;
+}
+
+.submit-sign-up-form {
+    padding: 50px;
+    margin: auto;
+}
+
+
+.submit-sign-up-form input {
+    padding:10px;
+    border-radius: 15px;
+    background: #fbd568; /* Fallback */
+    background: -moz-linear-gradient(#2b7cce, #0051a3);
+    background: -ms-linear-gradient(#2b7cce, #0051a3);
+    background: -o-linear-gradient(#2b7cce, #0051a3);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2b7cce), to(#ceddef));
+    background: -webkit-linear-gradient(#2b7cce, #0051a3);
+    background: linear-gradient(#2b7cce, #0051a3);
+    border: 1px solid #445260;
+    color: #ffffff;
+    text-shadow: 0 1px rgba(255,255,255,0.3);
+    display: block;
+
+}
+
+.aqi-container {
+    padding: 20px;
+    margin: auto;
+    width:40%;
+}
+
+.aqi {
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-size: 200px 200px;
+}
+
+#actual-index{
+    font-size: 2em;
+    padding-top: 60px;
+    color: #526377;
+}
+
+#index{
+    color: #7a8ea5;
+}
+
+#general-rec{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #526377;
+    text-align:center;
+    padding:20px 0 20px 0;
+    font-family: 'Helvetica', sans-serif;
+    color: #7a8ea5;
+}
+
+#sports {
+    display:inline-block;
+    float:left;
+    width: 40%;
+    text-align:center;
+    min-height: 100px
+}
+
+#outside {
+    display:inline-block;
+    float:right;
+    width: 40%;
+    text-align:center;
+    min-height: 100px
+}
+
+.btn-act {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: .8em;
+  line-height: normal;
+  background-color: #526377;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.14286em;
+  float: right;
+  padding: 10px 10px 5px 10px;
+  height:50px;
+  width:98%;
+  padding-bottom: 20px;
+}
+
+.rec {
+    margin-top: 20px;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color: #7a8ea5;
+    text-size: 1em;
+}
+
+#extra {
+    margin-top: 80px;
+    display: block;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    color: #7a8ea5;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+
+
+
+
+

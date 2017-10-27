@@ -1,0 +1,33 @@
+<div class="aqi-container">
+
+  <div class="aqi">
+    <h2 id="actual-index"><%= @view.aqi %></h2>
+    <h5 id="index">Air Quality Index</h5>
+  </div>
+
+  <div id="general-rec">
+    <span><%= @view.recs %></span>
+  </div>
+
+  <div id="sports">
+    <form class="act-form" action="/location_views/<%= @view.id %>/activities" method="GET">
+      <button class="btn-act" type=submit value="sports" name="activity_recs">Can I work out?</button>
+    </form>
+  </div>
+
+  <div id="outside">
+    <form class="act-form" action="/location_views/<%= @view.id %>/activities" method="GET">
+      <button class="btn-act" type=submit value="outside" name="activity_recs">Can I go out?</button>
+    </form>
+  </div>
+
+  <div class id="extra">
+    <p class="selected-act">
+
+    </p>
+  </div>
+</div>
+
+
+
+

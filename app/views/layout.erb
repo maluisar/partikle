@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a class='logo-link' href='/'>Partikle</a></h1>
+
+    <div class="menu-container">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+  </header>
+
+  <main id="main">
+    <%= yield %>
+    <div class="index-menu" id="index-menu">
+      <ul class= "menu-list">
+      <% if logged_in? %>
+        <li class="menu-list-item">
+          <form id="log-out" method="POST" action="/sessions">
+            <input type="hidden" name="_method" value="delete">
+            <button class=log-out-btn>Logout</button>
+          </form>
+        </li>
+
+        <li class="menu-list-item">Settings</li>
+        <li class="menu-list-item"></li>
+      <%else%>
+        <li class="menu-list-item" ><a id="log-in" href='/sessions/new'>Login</a></li>
+        <li class="menu-list-item" ><a id="sign-up" href='/users/new'>Sign up</a></li>
+        <li class="menu-list-item">About us</li>
+      <% end %>
+      </ul>
+    </div>
+  </main>
+  <% if @errors%>
+    <ul>
+      <% @errors.each do |error| %>
+       <li> <%= error %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+</body>
+</html>
