@@ -4,7 +4,7 @@ include HTTParty
   base_uri 'api.breezometer.com/baqi'
 
   def initialize
-    @token = "66900addef564f04ad6bf037d88e71ad"
+    @token = 
   end
 
   def aqi_data(latitude, longitude)
