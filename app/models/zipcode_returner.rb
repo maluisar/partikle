@@ -5,7 +5,7 @@ class ZipcodeReturner
   base_uri 'https://www.zipcodeapi.com/rest'
 
   def initialize
-    @token = "5uMDqskZJj9bju3tPc4XsIKQRez556St5JNtYqSHcUPs2dzjpfxSvSly7DdUCjkG"
+    @token = 
   end
 
   def closest_zipcodes(zipcode)
