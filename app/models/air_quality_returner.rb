@@ -5,7 +5,7 @@ class AirQualityReturner
   base_uri 'api.openweathermap.org/pollution/v1/'
 
   def initialize
-    @token = "d9343160f048d6398fd8618e9bad27a8"
+    @token =
   end
 
   def pollutant_data(latitude, longitude, contaminant)
