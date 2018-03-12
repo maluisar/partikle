@@ -5,7 +5,7 @@ class LongLatReturner
   base_uri 'https://maps.googleapis.com/maps/api/geocode/json?'
 
   def initialize
-    @token = "AIzaSyBNt4T5JrdT0F1MtVCCHvqQh4lyfO0oIIg"
+    @token = 
   end
 
   def location_by_zipcode(zipcode)
